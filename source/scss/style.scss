@@ -1,0 +1,360 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/footer";
+@import "_blocks/header";
+@import "_blocks/btn";
+@import "_blocks/servisesListTitle";
+
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+// Главная страница
+
+// Страница каталога
+
+// Страница блог
+
+// Страница игрушки
+
+.banner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.handle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.handle__item {
+  width: 30px;
+  height: 3px;
+  background: rgba(30, 6, 6, 0.6);
+  margin-bottom: 11px;
+}
+
+.banner {
+  background: #E0E7ED; 
+  background-image: url('/img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 143px 0 286px;
+}
+
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1E0606;
+}
+
+.title__over {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+}
+
+.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: center; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #C29974;
+  margin-bottom: 80px;
+}
+
+.subtitle__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+  /* padding-top: 11px;
+  padding-bottom: 11px; */
+  padding: 11px 0;
+}
+/* 
+.title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 100%;
+  color: #00559D;
+  width: 80%;
+  margin-bottom: 50px;
+  margin: 0;
+  letter-spacing: -1px;
+} */
+/* 
+.servises__title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 100%;
+  color: #00559D;
+  text-transform: uppercase;
+  text-align: center;
+} */
+
+.servises__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.servises__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          flex-direction: column;
+  width: 280px;
+  margin: 10px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-top: 110px;
+}
+
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 480px;
+}
+
+.about::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: -110px;
+  width: 570px;
+  height: 480px;
+  background: #008752;
+}
+
+.about-img {
+  z-index: 1;
+}
+
+.footer {
+  background-color: #00559D;
+}
+
+
+
+.popup {
+  position: fixed;
+  background: rgba(125, 151, 218);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+.popup-form {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 680px;
+  padding: 50px;
+  background-color: #499d00;
+}
+
+.open {
+  display: block;
+}
+
+
+.fieldset-double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.field-inner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.sec__first {
+  padding: 20px;
+  background-color: #008752;
+  width: 290px;
+  height: 200px;
+}
+
+.sec__second {
+  padding: 20px;
+  background-color: #008752;
+  width: 290px;
+}
+
+.sec__first-title {
+  margin-top: -30px;
+}
+
+.awards__list {
+  display: flex;
+  margin-top: 156px;
+  margin-bottom: 106px;
+  justify-content: space-between;
+}
+
+
+/* input */
+/* input {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+} */
+
+
+.rating__wrap {
+  border: none;
+  padding: 0;
+  width: 300px;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.rating__group {
+  position: absolute;
+  left: 150px;
+  background-image: url('../icon/Star.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 16px;
+}
+
+.rating__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  bottom: 0;
+  height: 16px;
+  background-size: 17px 16px;
+  background-repeat: space repeat-x;
+  cursor: pointer;
+}
+
+.rating__star:checked {
+  background-image: url('../icon/Star__checked.svg');
+  background-size: 17px 16px;
+}
+
+.rating__star:hover {
+  background-image: url('../icon/Star__hover.svg'); 
+  background-size: 17px 16px;
+}
+
+.rating__input~.rating__star {
+  background-image: url('../icon/Star.svg');
+  background-size: 17px 16px;
+}
+
+/* popup  */
+
+.popup-close {
+  width: 35px;
+  height: 35px;
+  background: none;
+  border: none;
+  background-image: url(../icon/cross.png);
+  background-repeat: no-repeat;
+}

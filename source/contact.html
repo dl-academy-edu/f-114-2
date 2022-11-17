@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DL Academy</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <h1>Contact Us</h1>
+      <form action="">
+        <fieldset>
+          <div>
+            <label for="input-name">Name</label>
+            <input type="text" id="input-name" placeholder="Ivan Ivanov" />
+          </div>
+          <div>
+            <label for="input-phone">Phone</label>
+            <input type="tel" id="input-phone" />
+          </div>
+        </fieldset>
+        <label>
+          <span>Email</span>
+          <input type="email" />
+        </label>
+        <div>
+          <h2>Payment Methods</h2>
+          <ul>
+            <li>
+              <input type="checkbox" id="input-cash" />
+              <label for="input-cash">Cash</label>
+            </li>
+            <li>
+              <input type="checkbox" id="input-card" />
+              <label for="input-card">Card</label>
+            </li>
+            <li>
+              <input type="checkbox" id="input-rec" />
+              <label for="input-rec">Receipt</label>
+            </li>
+          </ul>
+          <label>
+            <span>Date of Birth</span>
+            <input type="date" />
+          </label>
+          <fieldset>
+            <legend>Do you need...?</legend>
+            <ul>
+              <li>
+                <input type="radio" id="input-yes" value="Yes" />
+                <label for="input-yes">Yes</label>
+              </li>
+              <li>
+                <input type="radio" id="input-no" value="No" />
+                <label for="input-no">No</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>Subscribe to our social network</p>
+        <ul>
+          <li>
+            <a href="#"><img src="./icon/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/twitter.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/gplus.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/in.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icon/youtube.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
