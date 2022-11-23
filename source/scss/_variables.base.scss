@@ -12,6 +12,28 @@ $font-mono-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "
 */
 $font-base-family: $font-serif-family;
 
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+      url('../fonts/Lato-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+      url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-decorative: "Lato", sans-serif;
+
+
 /*
 * Breakpoints
 */
@@ -26,3 +48,8 @@ $media-desktop: 1200px;
 
 $color-bg: #fff;
 $color-text: #151515;
+$color-link:#b3a3ff;
+
+
+// text 
+$font-size-title: 40px;

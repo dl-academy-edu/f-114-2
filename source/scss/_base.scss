@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -18,24 +14,11 @@ a {
   color: #333333;
 }
 
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .hidden {
   visibility: hidden;
   position: absolute;
-  /* display: none; */
-}
-
-ul {
-  margin: 0;
-  padding: 0;  
 }
 
 li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }

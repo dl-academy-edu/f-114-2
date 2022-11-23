@@ -1,28 +1,20 @@
-
-/* стилизация хедера */
-
 .header {
-    display: flex;
-    align-items: center;
-    margin-top: 33px;
-    margin-bottom: 33px;
-}
-
-.header__list {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  &__list {
     display: flex;
     margin-right: auto;
-}
-
-.header__list-item {
-    margin-right: 15px;
-}
-
-.header__contact {
+    &-item {
+      margin-right: 15px;
+    }
+  }
+  &__contact {
     display: flex;
     align-items: center;
-}
-
-.header__contact-phone,
-.header__contact-search {
+  }
+  &-phone {
     margin-right: 24px;
+  }
 }
