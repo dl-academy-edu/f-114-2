@@ -6,6 +6,9 @@
   &__list {
     display: flex;
     margin-right: auto;
+    @media (max-width: 768px) {
+      display: none;
+    }
     &-item {
       margin-right: 15px;
     }

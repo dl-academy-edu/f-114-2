@@ -2,8 +2,7 @@
   display: block;
   text-transform: uppercase;
   border: none;
-  width: 181px;
-  height: 40px;
+  width: max-content;
   color: #fff;
   background: $color-link;
   font-size: 16px;
@@ -11,4 +10,9 @@
   text-align: center;
   padding: 11px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    &__header {
+      display: none;
+    }
+  }
 }

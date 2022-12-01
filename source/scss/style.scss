@@ -44,6 +44,14 @@
 // Страница блог
 
 // Страница игрушки
+
+.chat {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  width: 300px;
+  height: 488px;
+  background: #FFFFFF;
+  position: fixed;
+}
 .banner {
   background: #E0E7ED; 
   background-image: url('/img/banner.jpg');
@@ -53,7 +61,26 @@
   &__title {
     @include title-text;
   }
+  @media (max-width: 768px) {
+    padding-top: 87px;
+  }
 }
+.svg {
+  position: absolute;
+  top: 620px;
+  left: 700px;
+}
+.eyebrow-one {
+  transition: .4s;
+  &:hover {
+    transform: translate(-5px);
+  }
+}
+
+.eye-one:hover {
+  transform: translateY(2px);
+}
+
 
 
 .title__over {
@@ -67,6 +94,9 @@
 
 .servises {
   margin-top: 80px;
+  @media  (max-width: 768px) {
+    margin-top: 70px;
+  }
   &__title {
       font-family: $font-decorative;
       font-style: normal;
@@ -77,6 +107,10 @@
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 50px;
+      @media  (max-width: 768px) {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
   }
   &__list {
     display: flex;
@@ -109,6 +143,9 @@
       width: 570px;
       height: 480px;
       background: #008752;
+      @media (max-width: 1200px) {
+        right: -30px;
+      }
     }
   }
   &-img {
@@ -200,3 +237,11 @@
   background-image: url(../icon/cross.png);
   background-repeat: no-repeat;
 }
+
+@media (max-width: 768px)  {
+  
+} 
+
+@media (max-width: 375px)  {
+  
+} 
