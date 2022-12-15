@@ -225,7 +225,12 @@
           </p>
           <a class="btn" href="#">Learn more</a>
         </div>
-        <img src="/img/cleaning.jpg" class="about-img" alt="Cleaning process" />
+        <picture class="about-img">
+          <source srcset="/img/mobile.jpg, /img/mobile2x.jpg" media="(max-width: 375px)">
+          <source srcset="/img/tablet.jpg, /img/tablet2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="/img/about.jpg, /img/about2x.jpg 2x" media="(max-width: 1400px)">
+          <img src="/img/about.jpg" alt="Cleaning process">
+        </picture>
       </section>
       <section class="container">
         <h2 class="hidden">Awards</h2>
